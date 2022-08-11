@@ -1,87 +1,83 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2639
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww28300\viewh17700\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 *strain.csv - \
-Information of the measured strains. (Labeled name, full name and family)\
-\
-*carbon.csv - \
+
+*strain.csv - 
+Information of the measured strains. (Labeled name, full name and family)
+
+*carbon.csv - 
 Information of the used carbons. (Carbon name, type, number of atoms and weight)\
-\
+
 *enironments_profiles.csv - \
-Metabolic profiles (the monoculture growth yield of all 20 species in that environment). The columns are the monoculture growth yield of the different species, and the rows are the different environments there were monoculture on.\
-\
-*Features_two_way.csv -\
- The same pattern as Features, but with both effects ( the effect of bug 2 on bug 1 and the effect of bug 1 on bug 2)\
-\
-*Features.csv -\
-Full features table. Includes coculture, monoculture growth yield (of bug 1 and bug 2 in the measured environment, metabolic distance (the Euclidean distance of the monoculture growth yield vector in all environments of species 1 and the monoculture growth yield vector in all environments of species 2), the metabolic 4 PC components and the phylogenetic 2 PC components.\
-\
-*full_metric_sign.csv - \
-Scores of the null sign model.\
-\
-*full_metrics_strength.csv - \
-Scores of the null strength model.\
-\
-*monoGrow.csv - \
-Monoculture growth yield after  72h of each species in each environment.\
-\
-*monoGrow24.csv - \
-Monoculture growth yield after 24h of each species in each environment.\
-\
-*Naive_copy_sign_pet_distance.csv -\
- Scores of the copy sign er distance from the copied strain.\
-\
-*Naive_copy_strength_distance.csv - \
-Scores of the copy sign er distance from the copied strain.\
-\
-*no_duplicates.csv - \
-Same as features, but without duplicates (In the original features table there is the duplicated effect for \'91bug 1 effects bug 2\'92 where bug 1 = x and bug 2 = y, and \'91bug 2 effect bug 1\'92 where bug 1 = y and bug 2 = x.\
-\
-*pairwiseDistances-21Isolates&Ecoli - \
-phylogenetic distance matrix of all measured species. \
-\
-*partial_model_sign_strain.csv - \
-Results of all partial sign models for unmeasured species. \
-\
-*partial_model_sign_env.csv - \
-Results of all partial sign models for unmeasured environment. \
-\
-*partial_model_strength_strain.csv - \
-Results of all partial strength models for unmeasured species. \
-\
-*partial_model_strength_env.csv - \
-Results of all partial strength models for unmeasured environment. \
-\
-*X_test.csv - \
-Test set used for sign and strength predictions.\
-\
-*X_train.csv - \
-Train set used for sign and strength predictions.\
-\
-*y_test.csv - \
-True labels of test set used for sign and strength predictions.\
-\
-*y_label.csv - \
-True labels of train set used for sign and strength predictions.\
-\
-*X_test_partial.csv - \
-Test set used for partial models\'92 predictions.\
-\
-*X_train_partial.csv - \
-Train set used for partial models\'92 predictions.\
-\
-*y_test_partial.csv - \
-True labels of test set used for partial models\'92 predictions.\
-\
-*y_label_partial.csv - \
-True labels of train set used partial models\'92 predictions.\
-\
-Figs4_data.csv - \
-Relevant data for figure S4\
-\
-\
-}
+Metabolic profiles (the monoculture growth yield of all 20 species in that environment).
+The columns are the monoculture growth yield of the different species, and the rows are the different environments there were monoculture on.
+
+*Features_two_way.csv -
+The same pattern as Features, but with both effects ( the effect of bug 2 on bug 1 and the effect of bug 1 on bug 2)
+
+*Features.csv -
+Full features table. Includes coculture, monoculture growth yield (of bug 1 and bug 2 in the measured environment, 
+metabolic distance (the Euclidean distance of the monoculture growth yield vector in all environments of species 1 and the 
+monoculture growth yield vector in all environments of species 2), the metabolic 4 PC components and the phylogenetic 2 PC components.
+
+*full_metric_sign.csv - 
+Scores of the null sign model.
+
+*full_metrics_strength.csv - 
+Scores of the null strength model.
+
+*monoGrow.csv - 
+Monoculture growth yield after  72h of each species in each environment.
+
+*monoGrow24.csv - 
+Monoculture growth yield after 24h of each species in each environment.
+
+*Naive_copy_sign_pet_distance.csv -
+ Scores of the copy sign er distance from the copied strain.
+
+*Naive_copy_strength_distance.csv - 
+Scores of the copy sign er distance from the copied strain.
+
+*no_duplicates.csv - 
+Same as features, but without duplicates (In the original features table there is the duplicated effect for
+bug 1 effects bug 2 where bug 1 = x and bug 2 = y, and for bug 2 effect bug 1 where bug 1 = y and bug 2 = x.
+
+*pairwiseDistances-21Isolates&Ecoli - 
+phylogenetic distance matrix of all measured species. 
+
+*partial_model_sign_strain.csv - 
+Results of all partial sign models for unmeasured species. 
+
+*partial_model_sign_env.csv - 
+Results of all partial sign models for unmeasured environment. 
+
+*partial_model_strength_strain.csv - 
+Results of all partial strength models for unmeasured species. 
+
+*partial_model_strength_env.csv - 
+Results of all partial strength models for unmeasured environment. 
+
+*X_test.csv - 
+Test set used for sign and strength predictions.
+
+*X_train.csv - 
+Train set used for sign and strength predictions.
+
+*y_test.csv - 
+True labels of test set used for sign and strength predictions.
+
+*y_label.csv - 
+True labels of train set used for sign and strength predictions.
+
+*X_test_partial.csv - 
+Test set used for partial models\'92 predictions.
+
+*X_train_partial.csv - 
+Train set used for partial models\'92 predictions.
+
+*y_test_partial.csv - 
+True labels of test set used for partial models\'92 predictions.
+
+*y_label_partial.csv - 
+True labels of train set used partial models\'92 predictions.
+
+Figs4_data.csv - 
+Relevant data for figure S4
