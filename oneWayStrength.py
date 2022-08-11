@@ -75,7 +75,7 @@ class random_forest_regressor():
         Find the best model out a wide parameters range, and save it.
         """
         self.hyperParameterTuning()
-        pickle.dump(self.model, open('random_forest_strength.sav', 'wb'))
+        pickle.dump(self.model, open('random_forest_strength_grid_search.sav', 'wb'))
 
     def hyperParameterTuning(self):
         """
@@ -163,7 +163,7 @@ class xgb():
                                  n_iter=500, cv=5,
                                  verbose=2, n_jobs=-1)
         # fit the best model
-        xgb.fit(self.X, self.y)
+        self.model = xgb.fit(self.X, self.y)
         print(xgb.best_estimator_)
 
 
@@ -211,7 +211,8 @@ def evaluateModels(X_train, X_test, y_train, y_test, shap):
     :return: dictionary with models evaluated.
     """
 
-    rf = pickle.load(open('./models/strength_models/random_forest_strength.sav', 'rb'))
+    rf = RandomForestRegressor(bootstrap=False, max_features='sqrt',min_samples_split=4,n_estimators=378)
+    rf.fit(X_train,y_train)
     rfPrediction = rf.predict(X_test)
     rfScores = evaluate(rfPrediction, y_test)
 
@@ -297,6 +298,7 @@ def main():
     dic, best_strength_prediction = evaluateModels(X_train, X_test, y_train, y_test, False)
     df = plotComparison(dic)
     return df, y_test.reshape(-1), best_strength_prediction
+
 
 
 if __name__ == "__main__":
