@@ -1,34 +1,33 @@
+This repository contains all needed files for predictiong microbial pairwise interactions' strength or sign.
 
-* Data - 
+##Directories##
+
+DATA - 
 All relevant data files for the analysis.
 
-* Models - 
+MODELS - 
 All trained models, both for sign and strength predictions (saves as pickle files)
 
-* Supplementary tables -
+SUPPLEMENTARY TABLES -
 4 supplementary tables corresponding to the manuscript.
 
+##python files##
+
 * createData.py - 
-Preprocess of the data. Combine all features into single csv file. 
-
+  Preprocess of the data. Combine all features into single csv file. 
 * oneWaySign - 
-Training and comparison of sign models.
-
+  Training and comparison of sign models.
 * oneWayStrength.py - 
-Training and comparison of strength models.
+  Training and comparison of strength models.
 
 * oneWayVsTwoWay - 
-Comparison of one way trained models vs two way trained models.
-
+  Comparison of one way trained models vs two way trained models.
 * naiveModelStrain.py - 
-Implementation of the naive copy model (for a given strain).
-
+  Implementation of the naive copy model (for a given strain).
 * naiveModelCarbon.py - 
-Implementation of the naive copy model (for a given environment).
-
+  Implementation of the naive copy model (for a given environment).
 * modelsWithPartialFeatures.py - 
-Training and comparison of models with partial features, for each strain or 
-environment.
-
+  Training and comparison of models with partial features, for each strain or 
+  environment.
 * makeFigures.py - 
-Creation of all figures (main text + supplementary) 
+  Creation of all figures (main text + supplementary) 
