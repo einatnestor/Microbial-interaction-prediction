@@ -769,9 +769,9 @@ def main():
     #            carbon_sign_df_recall, carbon_sign_df_precision, sign_null_metrics)
     # plot_Fig6(y_test, strength_prediction, effect_1, effect_2, reciprocal_nrmse_2_1, avg_nrmse_reciprocal,
     #           avg_one_nrmse, avg_one_r2, avg_multi_nrmse, avg_multi_r2)
-    plot_Fig6S()
-    #plot_Fig7S(avg_one_nrmse, avg_one_r2, avg_multi_nrmse, avg_multi_r2, report_one_way, report_two_way)
-    #plot_Fig9S(carbon_pca, strain_pca)
+    # plot_Fig6S()
+    # plot_Fig7S(avg_one_nrmse, avg_one_r2, avg_multi_nrmse, avg_multi_r2, report_one_way, report_two_way)
+    # plot_Fig9S(carbon_pca, strain_pca)
 
 
 if __name__ == "__main__":
